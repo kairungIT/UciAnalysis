@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_lottie import st_lottie
-from streamlit_lottie import st_lottie_spinner'
+from streamlit_lottie import st_lottie_spinner
 import requests
 
 def load_lottieurl(url: str):
