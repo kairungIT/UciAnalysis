@@ -9,9 +9,9 @@ cl1,cl2,cl3=st.columns(3)
 with cl1:
     st.image('./pic/Setosa2.jpg')
 with cl2:
-    st.image('./pic/versicolor_2.jpg')
-with cl3:
     st.image('./pic/virginica2.jpg')
+with cl3:    
+    st.image('./pic/versicolor_2.jpg')
 st.header("Decision Tree for classification")
 df = pd.read_csv("./data/iris.csv")
 st.write(df.head(10))
