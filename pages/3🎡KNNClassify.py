@@ -1,15 +1,16 @@
 import streamlit as st
+import pandas as pd
 
 st.image('./pic/breast.jpg') # ข้อมูลรูปภาพตัวเอง
-col1, col2 = st.columns(2)
-with col1:
+#col1, col2 = st.columns(2)
+#with col1:
   #st.write('การทำนายการเกิดโรคมะเร็งเต้านม') # ชื่อตัวเอง
-  st.write('ไก้รุ่ง เฮงพระพรหม')
-with col2:
-  st.write('สาขาวิชาวิทยาการข้อมูล')
-  st.write('คณะวิทยาศาสตร์และเทคโนโลยี')
+#  st.write('ไก้รุ่ง เฮงพระพรหม')
+#with col2:
+#  st.write('สาขาวิชาวิทยาการข้อมูล')
+#  st.write('คณะวิทยาศาสตร์และเทคโนโลยี')
 
-  html_1 = """
+html_1 = """
 <div style="background-color:#76D7C4;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4>การทำนายข้อมูลโรคมะเร็งเต้านม</h4></center>
 </div>
@@ -17,7 +18,6 @@ with col2:
 st.markdown(html_1, unsafe_allow_html=True)
 st.markdown("")
 
-import pandas as pd
 dt=pd.read_csv('./data/breastcancer.csv')
 st.write(dt.head(10))
 dt1 = dt['ClumpThickness'].mean()
