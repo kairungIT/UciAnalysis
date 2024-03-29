@@ -5,7 +5,7 @@ from sklearn.preprocessing import PolynomialFeatures
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score,mean_squared_error
-st.image('./pic/stock.jpg')
+st.image('./pic/stock1.jpg')
 st.title("การพยากรณ์ข้อมูลด้วยเทคนิค Linear Regression")
 st.subheader("การพยากรณ์ข้อมูล stock index price")
 
@@ -14,7 +14,7 @@ st.write(df.head(10))
 
 #st.line_chart(df)
 #st.line_chart(df, x="interest_rate", y="unemployment_rate", color="stock_index_price")
-st.image('./pic/stock.jpg')
+st.image('./pic/stock2.jpg')
 st.subheader("กราฟแสดงข้อมูล stock index price")
 st.line_chart(
    df, x="interest_rate", y=["stock_index_price"], color=["#FF0000"]  # Optional
@@ -40,7 +40,7 @@ html_1 = """
 """
 st.markdown(html_1, unsafe_allow_html=True)
 st.markdown("")
-st.image('./pic/stock.jpg')
+st.image('./pic/stock3.jpg')
 
 if st.button("พยากรณ์ข้อมูล"):
     x_input=[[x1,x2]]
