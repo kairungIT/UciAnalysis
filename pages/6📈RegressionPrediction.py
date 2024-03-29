@@ -35,7 +35,7 @@ x2=st.number_input("กรุณาป้อนข้อมูล unemployment_r
 html_1 = """
 <div style="background-color:#76D7C4;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4>การพยากรณ์ข้อมูล stock index price ด้วยเทคนิค 
-Linear Regression</h4></center>
+<br>Linear Regression</h4></center>
 </div>
 """
 st.markdown(html_1, unsafe_allow_html=True)
