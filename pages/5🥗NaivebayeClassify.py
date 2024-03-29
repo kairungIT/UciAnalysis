@@ -10,7 +10,7 @@ import streamlit as st
 df = pd.read_csv("./data/iris.csv")
 X = df.drop('variety',axis=1)
 y = df['variety']
-
+st.image('./pic/Iris.png')
 html_1 = """
 <div style="background-color:#76D7C4;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4>การทำนายข้อมูลดอกไม้ด้วยเทคนิค Naive Bayes</h4></center>
