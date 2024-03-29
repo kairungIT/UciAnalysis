@@ -5,7 +5,7 @@ from sklearn.preprocessing import PolynomialFeatures
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score,mean_squared_error
-
+st.image('./pic/stock.jpg')
 st.title("การพยากรณ์ข้อมูลด้วยเทคนิค Linear Regression")
 st.subheader("การพยากรณ์ข้อมูล stock index price")
 
@@ -40,6 +40,7 @@ html_1 = """
 """
 st.markdown(html_1, unsafe_allow_html=True)
 st.markdown("")
+st.image('./pic/stock.jpg')
 
 if st.button("พยากรณ์ข้อมูล"):
     x_input=[[x1,x2]]
