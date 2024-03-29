@@ -3,8 +3,8 @@ import streamlit as st
 #st.image('./pic/Breast.jpg') # ข้อมูลรูปภาพตัวเอง
 col1, col2 = st.columns(2)
 with col1:
-  st.write('การทำนายการเกิดโรคมะเร็งเต้านม') # ชื่อตัวเอง
-  #st.write('ชื่อ นศ.')
+  #st.write('การทำนายการเกิดโรคมะเร็งเต้านม') # ชื่อตัวเอง
+  st.write('ไก้รุ่ง เฮงพระพรหม')
 with col2:
   st.write('สาขาวิชาวิทยาการข้อมูล')
   st.write('คณะวิทยาศาสตร์และเทคโนโลยี')
